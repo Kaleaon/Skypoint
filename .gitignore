@@ -92,3 +92,12 @@ out/
 .Trashes
 ehthumbs.db
 Thumbs.db
+
+# Node.js / React webapp
+webapp/node_modules/
+webapp/dist/
+webapp/build/
+webapp/.env.local
+webapp/.env.development.local
+webapp/.env.test.local
+webapp/.env.production.local

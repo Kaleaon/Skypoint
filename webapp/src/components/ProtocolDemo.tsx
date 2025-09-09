@@ -9,7 +9,7 @@ interface ProtocolMessage {
 export const ProtocolDemo: React.FC = () => {
   const [messages, setMessages] = useState<ProtocolMessage[]>([])
   const [connectionStatus, setConnectionStatus] = useState<'disconnected' | 'connecting' | 'connected'>('disconnected')
-  const [simulatedAgent, setSimulatedAgent] = useState({
+  const [simulatedAgent] = useState({
     name: 'TestAgent',
     position: { x: 128, y: 128, z: 25 },
     region: 'Mainland Sandbox'

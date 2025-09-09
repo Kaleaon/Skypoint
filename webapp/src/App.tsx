@@ -1,4 +1,3 @@
-import React, { useEffect, useRef } from 'react'
 import { Scene3D } from './components/Scene3D'
 import { ProtocolDemo } from './components/ProtocolDemo'
 import { AssetManager } from './components/AssetManager'
