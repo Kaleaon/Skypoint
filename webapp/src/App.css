@@ -1,0 +1,180 @@
+.app {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+  color: white;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.app-header {
+  text-align: center;
+  padding: 2rem;
+  background: rgba(0, 0, 0, 0.3);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.app-header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+  background: linear-gradient(45deg, #ff6b6b, #4ecdc4);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.app-header p {
+  margin: 0.5rem 0 0 0;
+  opacity: 0.8;
+  font-size: 1.1rem;
+}
+
+.app-main {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.demo-section, .analysis-section {
+  margin: 2rem 0;
+  padding: 1.5rem;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.demo-section h2, .analysis-section h2 {
+  margin: 0 0 1rem 0;
+  color: #4ecdc4;
+  font-size: 1.5rem;
+}
+
+.scene-container {
+  width: 100%;
+  height: 400px;
+  background: #000;
+  border-radius: 8px;
+  border: 2px solid rgba(78, 205, 196, 0.3);
+  overflow: hidden;
+  position: relative;
+}
+
+.scene-overlay {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: rgba(0, 0, 0, 0.8);
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 0.9rem;
+}
+
+.protocol-demo {
+  padding: 1rem;
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 8px;
+  font-family: 'Courier New', monospace;
+}
+
+.asset-demo {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+}
+
+.asset-item {
+  padding: 1rem;
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.analysis-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+}
+
+.analysis-card {
+  padding: 1.5rem;
+  border-radius: 8px;
+  border: 2px solid;
+}
+
+.analysis-card.feasible {
+  background: rgba(76, 175, 80, 0.1);
+  border-color: #4caf50;
+}
+
+.analysis-card.challenging {
+  background: rgba(255, 193, 7, 0.1);
+  border-color: #ffc107;
+}
+
+.analysis-card.difficult {
+  background: rgba(244, 67, 54, 0.1);
+  border-color: #f44336;
+}
+
+.analysis-card h3 {
+  margin: 0 0 1rem 0;
+  font-size: 1.2rem;
+}
+
+.analysis-card ul {
+  margin: 0;
+  padding-left: 1.5rem;
+}
+
+.analysis-card li {
+  margin: 0.5rem 0;
+  opacity: 0.9;
+}
+
+.app-footer {
+  text-align: center;
+  padding: 2rem;
+  background: rgba(0, 0, 0, 0.3);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  margin-top: 2rem;
+}
+
+.app-footer a {
+  color: #4ecdc4;
+  text-decoration: none;
+}
+
+.app-footer a:hover {
+  text-decoration: underline;
+}
+
+.status-indicator {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+
+.status-indicator.connected {
+  background: #4caf50;
+}
+
+.status-indicator.disconnected {
+  background: #f44336;
+}
+
+.status-indicator.connecting {
+  background: #ffc107;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
